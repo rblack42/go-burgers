@@ -1,0 +1,16 @@
+# Mac
+.DS_Store
+
+# Vim
+*.swp
+*~
+
+# Python
+_venv
+
+# playground
+_unpublished
+
+# executables
+_bin/
+
