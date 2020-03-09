@@ -3,11 +3,11 @@ import re
 import sys
 import datetime
 
-version_re = re.compile("^#define.*\"(.*)\"$")
+version_re = re.compile("^VERSION \"(.*)\"$")
 AUTHOR  = os.getenv('REALNAME')
 YEAR = datetime.datetime.now().year
 
-VERSION = "include/version.h"
+VERSION = "VERSION.txt"
 
 def main():
     vstring = "0.0.0"
@@ -22,11 +22,12 @@ def main():
                 break
             lc+=1
         fin.close()
+        print("FOund version file",lc)
     else:
         lines = []
-        lines.append("#pragma once\n\n")
-        lines.append("// Copyright %d %s\n\n" % (YEAR, AUTHOR))
-        lines.append("#define VERSION %s\n" % vstring)
+        lines.append("// Copyright %d %s\n" % (YEAR, AUTHOR))
+        lines.append("\n")
+        lines.append("VERSION %s\n" % vstring)
         lc = 2
         vstring="0.0.0"
     major,minor,build = vstring.split('.')
@@ -43,7 +44,7 @@ def main():
     vstring = major + '.' + minor + "." + build
 
     fout = open(VERSION,'w')
-    lines[lc] = "#define VERSION \"%s\"" % vstring
+    lines[lc] = "VERSION \"%s\"" % vstring
     for l in lines:
         fout.write(l)
     fout.write("\n");

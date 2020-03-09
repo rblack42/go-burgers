@@ -21,3 +21,4 @@ endif
 # modular utilities
 -include $(MK)/help.mk
 -include $(MK)/debug.mk
+-include $(MK)/version.mk

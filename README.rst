@@ -1,5 +1,5 @@
-go-burgers (v0.0.1)
-#####################
+go-burgers (v0.0.6)
+###################
 :Course: COC2325 - Computer Architecture and Machine Language
 :School: Austin Community College
 :Email: roie.black@gmail.com
@@ -40,3 +40,12 @@ Dependencies
 
 ..  |license| image:: https://img.shields.io/badge/License-BSD%203--Clause-blue.svg
     :alt: BSD 3-Clause License
+
+
+
+
+
+
+
+
+

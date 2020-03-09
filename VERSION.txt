@@ -1,0 +1,3 @@
+// Copyright 2020 Roie R. Black
+
+VERSION "0.0.1"
