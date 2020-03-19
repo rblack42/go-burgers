@@ -4,6 +4,8 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/rblack42/go-burgers/gui"
 )
 
 func Hello() string {
@@ -12,5 +14,6 @@ func Hello() string {
 
 func main() {
 	fmt.Println(Hello())
+	gui.Run()
 }
 

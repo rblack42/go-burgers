@@ -9,3 +9,7 @@ all: ## Build Go project:
 
 test: ## Test Go project
 	go test
+
+.PHONY: init
+init: ## INitialize go module
+	go mod init github.com/rblack42/$(PROJNAME)

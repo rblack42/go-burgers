@@ -2,13 +2,14 @@ package main
 
 import (
 	"testing"
+
+	"fyne.io/fyne"
+	"github.com/rblack42/go-burgers/gui"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestMain(t *testing.T) {
-	got := Hello()
-	want := "Burgers Equation Explorer"
+	app := gui.Create()
 
-	if got != want {
-		t.Errorf("got %q want %q", got, want)
-	}
+	assert.Equal(t, app, fyne.CurrentApp())
 }
