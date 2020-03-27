@@ -6,11 +6,13 @@
 *~
 
 # Python
-_venv
+_venv/
 
 # playground
-_unpublished
+_unpublished/
 
 # executables
 _bin/
 
+# go
+vendor/

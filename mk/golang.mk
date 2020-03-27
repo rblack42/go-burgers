@@ -1,5 +1,7 @@
 # Makefile targets for Go projects
 
+REPONAME := github.com/$(GITHUB)/$(PROJNAME)
+
 PHONY: all
 
 all: ## Build Go project:
@@ -11,5 +13,5 @@ test: ## Test Go project
 	go test
 
 .PHONY: init
-init: ## INitialize go module
-	go mod init github.com/rblack42/$(PROJNAME)
+init: ## Initialize go module
+	go mod init $(REPONAME)

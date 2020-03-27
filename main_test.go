@@ -13,3 +13,7 @@ func TestMain(t *testing.T) {
 
 	assert.Equal(t, app, fyne.CurrentApp())
 }
+
+func TestMainWindow(t *testing.T) {
+	app := gui.Create()
+}

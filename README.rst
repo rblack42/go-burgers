@@ -3,7 +3,7 @@ go-burgers (v0.0.6)
 :Course: COC2325 - Computer Architecture and Machine Language
 :School: Austin Community College
 :Email: roie.black@gmail.com
-:Documentation: http://rblack42.github.io/go-burgers
+:Documentation: http://rblack42.github.io/go-burgers/index.html
 
 |travis-build| |license|
 
